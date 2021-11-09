@@ -1,1 +1,28 @@
+@font-face {
+  font-family: "Shapiro-regular";
+  src: url("../fonts/sharpiro-regular.woff2") format("woff2");
+}
 
+@font-face {
+  font-family: "Shapiro-bold";
+  src: url("../fonts/sharpiro-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Uniform-black";
+  src: url("../fonts/uniform-pro-con-black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Uniform-medium";
+  src: url("../fonts/uniform-pro-con-medium.woff2") format("woff2");
+}
+
+$main-body: "Shapiro-regular";
+$secondary-body: "Shapiro-bold";
+$main-heading: "Uniform-black";
+$secondary-heading: "Uniform-medium";
+
+body {
+  font-family: $main-body;
+}

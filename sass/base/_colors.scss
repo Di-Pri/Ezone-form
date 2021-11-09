@@ -1,8 +1,15 @@
 $bg-color: #16152b;
-$font-color: white;
+$font-color: #fff;
+$sec-font-color: #abf49d;
 
-body,
-header {
+$heading-color: #ffc3a4;
+$heading-color-animate: #4508d6;
+
+body {
   background-color: $bg-color;
   color: $font-color;
+}
+
+header {
+  background-color: rgba(22, 21, 43, 0.3);
 }

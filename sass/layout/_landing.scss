@@ -1,0 +1,53 @@
+@use "../base" as b;
+
+.landing {
+  position: fixed;
+}
+
+.heading {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  padding: 1rem;
+  place-content: center;
+
+  color: b.$heading-color;
+
+  p:not(:nth-of-type(3)) {
+    font-family: b.$main-heading;
+    font-size: 70px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 4.2rem;
+  }
+
+  p:nth-of-type(2) {
+    -webkit-text-stroke: 1px b.$heading-color;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p:nth-of-type(3) {
+    margin-top: 5rem;
+    font-size: 13px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+}
+
+@mixin pattern {
+  position: absolute;
+  max-width: 100%;
+  z-index: -1;
+}
+
+.pattern1 {
+  @include pattern;
+  left: 0;
+  bottom: -8rem;
+}
+.pattern2 {
+  @include pattern;
+  top: 0;
+  right: 0;
+}
