@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  z-index: 1;
+  width: 100vw;
+  padding: 2rem;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.11765);
+
+  $icons-gap: 1.5rem;
+
+  nav {
+    display: flex;
+    gap: $icons-gap;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .icons {
+    display: flex;
+    gap: $icons-gap;
+    margin-left: auto;
+    img {
+      width: 15px;
+    }
+    div:nth-of-type(1) {
+      margin-right: 4rem;
+      display: flex;
+      gap: $icons-gap;
+    }
+  }
+}
+
+.burger {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  align-items: center;
+
+  @mixin burger {
+    width: 20px;
+    height: 1px;
+    background: white;
+    border-radius: 5px;
+  }
+
+  div {
+    @include burger;
+
+    &::before {
+      content: "";
+      position: absolute;
+      @include burger;
+      transform: translateY(-7px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      @include burger;
+      transform: translateY(7px);
+    }
+  }
+}
