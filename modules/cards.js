@@ -1,5 +1,5 @@
 export async function loadCards() {
-  const response = await fetch("cards.json");
+  const response = await fetch("./cards.json");
   const cardData = await response.json();
   cardData.forEach(showCards);
 }
