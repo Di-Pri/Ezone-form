@@ -9,7 +9,7 @@
     "type": "Infographic",
     "heading": "How Sleep Effects Our Memory And Cognitive Abilities",
     "field": "Sleep",
-    "image": "/images/card2.jpg"
+    "image": "./images/card2.jpg"
   },
   {
     "type": "Story",

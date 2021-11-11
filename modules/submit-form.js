@@ -1,4 +1,4 @@
-import { post } from "../modules/crud.js";
+import { get, post } from "../modules/crud.js";
 
 export function submitForm() {
   const form = document.querySelector("form");
@@ -7,6 +7,9 @@ export function submitForm() {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     if (form.checkValidity()) {
+      document.querySelector("#last").className = "hidden";
+      document.querySelector("#user-name").className = "active";
+
       //  const experiences = [];
       //  const experiencesChecked = document.querySelectorAll("[name=experience]:checked");
       //  experiencesChecked.forEach((el) => experiences.push(el.value));
@@ -28,9 +31,12 @@ export function submitForm() {
         password: form.elements.password.value,
       };
       console.log(data);
-      // post(data, showName);
-      // get(showName);
-      post(data);
+      post(data, showName);
+      get(showName);
+      function showName(user) {
+        document.querySelector("#user-name span").textContent = user.name;
+      }
+      //post(data);
     } else {
       form.reportValidity();
     }

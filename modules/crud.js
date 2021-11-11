@@ -14,7 +14,7 @@ export function get(callback) {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-      // document.querySelector(".userName").textContent = "";
+      document.querySelector("#user-name span").textContent = "";
       data.forEach(callback);
     });
 }
@@ -28,7 +28,7 @@ export function post(data, callback) {
   })
     .then((res) => res.json())
     .then((data) => {
-      // callback(data);
+      callback(data);
       console.log(data);
     });
 }
