@@ -4,7 +4,255 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="./style.scss" />
     <title>Form</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main-form">
+      <article id="ask-user" class="active">
+        <h1>Are you ready to go to the next level?</h1>
+        <p>Customize the ezone space to your personal needs by answering some questions about your gaming preferences and lifestyle.</p>
+        <div class="backNext">
+          <button class="maybe-later"><a href="index.html#cardsStart">Maybe later</a></button>
+          <button class="lets-do">Let's do it!</button>
+        </div>
+      </article>
+      <section>
+        <form>
+          <article class="hidden">
+            <h1>Your name</h1>
+            <p>Introduce yourself by writing your name, nickname, gamertag or however you prefer to be called.</p>
+            <div class="form-group">
+              <label for="name">Enter your name</label>
+              <input id="name" type="text" name="name" required />
+            </div>
+            <div class="backNext">
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
+
+          <article class="hidden">
+            <h1>Your age</h1>
+            <p>How old are you?</p>
+            <div class="form-group">
+              <label for="age">Enter your age (10-99)</label>
+              <input type="text" id="age" name="age" inputmode="numeric" pattern="[0-9]{2}" required />
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
+
+          <article class="hidden">
+            <h1>Gaming experience</h1>
+            <p>For how long have you been playing computer games?</p>
+
+            <div class="experience">
+              <div>
+                <input id="experienceOne" type="radio" name="experience" value="Less than 1 year" required />
+                <label for="experienceOne">Less than 1 year</label>
+              </div>
+              <div>
+                <input id="experienceTwo" type="radio" name="experience" value="1-5 years" />
+                <label for="experienceTwo"> 1-5 years </label>
+              </div>
+              <div>
+                <input id="experienceThree" type="radio" name="experience" value="More that 5 years" />
+                <label for="experienceThree"> More that 5 years </label>
+              </div>
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
+
+          <!-- <article class="hidden">
+          <h1>Gaming preferences</h1>
+          <p>What types of games do you prefer to play?</p>
+          <div class="form-group">
+            <label for="types"
+              >Name
+              <span class="hint">Choose an option</span>
+            </label>
+            <input id="types" type="text" name="types" required />
+            <datalist id="types-list">
+              <option value="Sports"></option>
+              <option value="Racing"></option>
+              <option value="RTS"></option>
+              <option value="Simulation"></option>
+              <option value="Role-playing"></option>
+              <option value="Adventure"></option>
+              <option value="Survival"></option>
+              <option value="Fighting"></option>
+              <option value="Battle"></option>
+              <option value="Rhythm"></option>
+              <option value="Platform"></option>
+            </datalist>
+          </div>
+           <div class="backNext">
+            <button class="back" type="button">Back</button>
+            <button class="next" type="button">Next</button>
+          </div>
+        </article> -->
+
+          <!-- <article class="hidden">
+          <h1>Favorite games</h1>
+          <p>Choose the games that you like the most.</p>
+          <div class="form-group">
+            <label for="games"
+              >Name
+              <span class="hint">Choose an option</span>
+            </label>
+            <input id="games" type="text" name="games" required />
+            <datalist id="games-list">
+              <option value="CS:GO"></option>
+              <option value="Tekken"></option>
+              <option value="FIFA"></option>
+              <option value="Super Mario"></option>
+              <option value="Fortnite"></option>
+              <option value="Call of Duty"></option>
+              <option value="The Sims"></option>
+              <option value="Mortal Combat"></option>
+              <option value="Guitar Hero"></option>
+              <option value="World of Warcraft"></option>
+              <option value="Starcraft"></option>
+              <option value="Warcraft"></option>
+              <option value="League of Legends"></option>
+              <option value="Dota"></option>
+              <option value="Valorant"></option>
+              <option value="Left for dead"></option>
+              <option value="Overwatch"></option>
+              <option value="PUBG"></option>
+              <option value="Diablo"></option>
+              <option value="Minecraft"></option>
+            </datalist>
+          </div>
+          <div class="backNext">
+            <button class="back" type="button">Back</button>
+            <button class="next" type="button">Next</button>
+          </div>
+        </article> -->
+
+          <!-- <article class="hidden">
+          <h1>Gaming durability</h1>
+          <p>How many hours per day do you usually play?</p>
+          <div class="form-group">
+            <label for="play-hours"
+              >Name
+              <span class="hint">Choose an option</span>
+            </label>
+            <input id="play-hours" type="text" name="play-hours" required />
+            <datalist id="play-hours-list">
+              <option value="0-3"></option>
+              <option value="3-5"></option>
+              <option value="5-7"></option>
+              <option value="7-9"></option>
+              <option value="9-12"></option>
+              <option value="12-18"></option>
+            </datalist>
+          </div>
+           <div class="backNext">
+            <button class="back" type="button">Back</button>
+            <button class="next" type="button">Next</button>
+          </div>
+        </article> -->
+
+          <!-- <article class="hidden">
+          <h1>Sleeping durability</h1>
+          <p>How long do you sleep normally?</p>
+          <div class="form-group">
+            <label for="sleep-hours"
+              >Name
+              <span class="hint">Choose an option</span>
+            </label>
+            <input id="sleep-hours" type="text" name="sleep-hours" required />
+            <datalist id="sleep-hours-list">
+              <option value="0-3"></option>
+              <option value="3-5"></option>
+              <option value="5-7"></option>
+              <option value="7-9"></option>
+              <option value="9-12"></option>
+              <option value="12-18"></option>
+            </datalist>
+          </div>
+           <div class="backNext">
+            <button class="back" type="button">Back</button>
+            <button class="next" type="button">Next</button>
+          </div>
+        </article> -->
+
+          <!-- <article class="hidden">
+          <h1>Areas of interest</h1>
+          <p>Choose areas where you would like to improve yourself.</p>
+          <div class="form-group">
+            <label for="areas"
+              >Name
+              <span class="hint">Choose an option</span>
+            </label>
+            <input id="areas" type="text" name="areas" required />
+            <datalist id="areas-list">
+              <option value="Hand/eye coordination"></option>
+              <option value="Reaction time"></option>
+              <option value="Hearing"></option>
+              <option value="Vision"></option>
+              <option value="Communication"></option>
+              <option value="Multi-tasking"></option>
+              <option value="Mindset"></option>
+              <option value="Nutrition"></option>
+              <option value="Injuries"></option>
+              <option value="Technology"></option>
+              <option value="Physiology"></option>
+              <option value="Sleep"></option>
+              <option value="Stress"></option>
+              <option value="Tactical"></option>
+              <option value="Strategy"></option>
+              <option value="Leadership"></option>
+            </datalist>
+          </div>
+         <div class="backNext">
+            <button class="back" type="button">Back</button>
+            <button class="next" type="button">Next</button>
+          </div>
+        </article> -->
+
+          <article class="hidden">
+            <h1>Contact information</h1>
+            <p>Be the first to get exclusive content from the experts within the field.</p>
+            <div class="form-group">
+              <label for="email"
+                >Email
+                <span class="hint">Enter your email</span>
+              </label>
+              <input id="email" type="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="newsletter"
+                >Check
+                <span class="hint">Select</span>
+              </label>
+              <input id="newsletter" type="radio" name="newsletter" value="Yes" />
+            </div>
+            <div class="form-group">
+              <label for="password"
+                >Password (minimum 8 characters)
+                <span class="hint">Enter yuor password</span>
+              </label>
+              <input id="password" type="password" name="password" minlength="8" required />
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+            </div>
+            <button class="submit">Submit</button>
+          </article>
+        </form>
+      </section>
+
+      <div class="userName"></div>
+    </main>
+
+    <script type="module" src="/form.js"></script>
+  </body>
 </html>

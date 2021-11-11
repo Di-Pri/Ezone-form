@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="./style.scss" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ezone</title>
   </head>
   <body>
@@ -50,12 +50,26 @@
           <p>Elevating performance</p>
           <p>In esports athletes</p>
           <p>An independent collective of performance experts, helping you to push your boundaries and challenge your limits.</p>
+          <a href="form.html"> Get in the zone</a>
         </div>
         <img class="pattern1" src="./images/pattern-bottom.svg" alt="Decoration pattern" />
         <img class="pattern2" src="./images/pattern-top.svg" alt="Decoration pattern" />
       </section>
-      <section class="cards"></section>
+      <section class="cards">
+        <div id="cardsStart" class="parentCard"></div>
+      </section>
     </main>
+
+    <!-- template landing cards -->
+    <template id="childCard">
+      <article class="cardContent">
+        <div></div>
+        <h3></h3>
+        <h1></h1>
+        <h4></h4>
+      </article>
+    </template>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>

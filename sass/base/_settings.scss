@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box; /* So 100% means 100% */
+  margin: 0;
+}
+
+img {
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}

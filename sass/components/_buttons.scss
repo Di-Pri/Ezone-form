@@ -1,0 +1,27 @@
+@use "../base" as b;
+
+@mixin button {
+  padding: 0.9rem 2.6rem;
+  border-radius: 30px;
+  background-color: b.$main-button-color;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 14px;
+}
+
+.landing {
+  a {
+    margin: 0 auto;
+    @include button;
+  }
+}
+
+.backNext {
+  button {
+    @include button;
+    border: none;
+    cursor: pointer;
+    margin-inline: 2rem;
+  }
+}

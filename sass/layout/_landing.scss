@@ -11,7 +11,6 @@
   display: grid;
   padding: 1rem;
   place-content: center;
-
   color: b.$heading-color;
 
   p:not(:nth-of-type(3)) {
@@ -28,10 +27,9 @@
   }
 
   p:nth-of-type(3) {
-    margin-top: 5rem;
+    margin: 5rem auto;
     font-size: 13px;
     max-width: 600px;
-    margin-inline: auto;
   }
 }
 

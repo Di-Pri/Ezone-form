@@ -1,0 +1,74 @@
+[
+  {
+    "type": "Infographic",
+    "heading": "The Cognitive Skills Of Esports Athletes",
+    "field": "Physiology",
+    "image": "./images/card1.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "How Sleep Effects Our Memory And Cognitive Abilities",
+    "field": "Sleep",
+    "image": "/images/card2.jpg"
+  },
+  {
+    "type": "Story",
+    "heading": "Ready To Compete: Achieving The Ultimate Esports Mind",
+    "field": "Mindset",
+    "image": "./images/card3.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "'Flow State' Explained",
+    "field": "Mindset",
+    "image": "./images/card4.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "Why Does My Hand Hurt?",
+    "field": "Injuries",
+    "image": "./images/card5.jpg"
+  },
+  {
+    "type": "Story",
+    "heading": "Training The Eye For Improved Visual Cues In-Game",
+    "field": "Vision",
+    "image": "./images/card6.jpg"
+  },
+  {
+    "type": "Expert video",
+    "heading": "Relaxing Eye Exercises",
+    "field": "Vision",
+    "image": "./images/card7.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "Light And Its Effect On The Circadian Rhythm ",
+    "field": "Sleep",
+    "image": "./images/card12.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "Training Exercises For The Eye",
+    "field": "Vision",
+    "image": "./images/card8.jpg"
+  },
+  {
+    "type": "Infographic",
+    "heading": "The Importance Of Vision In Esports",
+    "field": "Vision",
+    "image": "./images/card9.jpg"
+  },
+  {
+    "type": "Video",
+    "heading": "How The Eye Works: Muscles And Movement",
+    "field": "Vision",
+    "image": "./images/card10.jpg"
+  },
+  {
+    "type": "Story",
+    "heading": "The Notorious Blue Light: Is It Really So Bad?",
+    "field": "Vision",
+    "image": "./images/card11.jpg"
+  }
+]
