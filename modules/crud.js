@@ -6,19 +6,6 @@ const headers = {
   "cache-control": "no-cache",
 };
 
-export function get(callback) {
-  fetch(endpoint, {
-    method: "get",
-    headers,
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      document.querySelector("#user-name span").textContent = "";
-      data.forEach(callback);
-    });
-}
-
 export function post(data, callback) {
   const postData = JSON.stringify(data);
   fetch(endpoint, {
@@ -29,6 +16,6 @@ export function post(data, callback) {
     .then((res) => res.json())
     .then((data) => {
       callback(data);
-      console.log(data);
+      console.log("Posted data:", data);
     });
 }

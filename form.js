@@ -7,7 +7,6 @@ import { submitForm } from "./modules/submit-form.js";
 window.addEventListener("DOMContentLoaded", start);
 
 function start() {
-  document.querySelector("#user-name span").textContent = "";
   moveSlides();
   submitForm();
 }

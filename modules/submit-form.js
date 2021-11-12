@@ -1,4 +1,4 @@
-import { get, post } from "../modules/crud.js";
+import { post } from "../modules/crud.js";
 
 export function submitForm() {
   const form = document.querySelector("form");
@@ -23,7 +23,7 @@ export function submitForm() {
       }
 
       const data = {
-        name: form.elements.name.value,
+        name: form.elements.name.value.charAt(0).toUpperCase() + form.elements.name.value.substring(1),
         age: form.elements.age.value,
         experience: experience.value,
         preference: preferences.join(", "),
@@ -31,9 +31,9 @@ export function submitForm() {
         newsletter: newsletters,
         password: form.elements.password.value,
       };
-      console.log(data);
+
+      console.log("Submited data:", data);
       post(data, showName);
-      get(showName);
       function showName(user) {
         document.querySelector("#user-name span").textContent = user.name;
       }
