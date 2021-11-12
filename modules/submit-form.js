@@ -10,9 +10,9 @@ export function submitForm() {
       document.querySelector("#last").className = "hidden";
       document.querySelector("#user-name").className = "active";
 
-      //  const experiences = [];
-      //  const experiencesChecked = document.querySelectorAll("[name=experience]:checked");
-      //  experiencesChecked.forEach((el) => experiences.push(el.value));
+      const preferences = [];
+      const preferencesChecked = document.querySelectorAll("[name=preference]:checked");
+      preferencesChecked.forEach((pref) => preferences.push(pref.value));
 
       const experience = document.querySelector("[name=experience]:checked");
 
@@ -26,6 +26,7 @@ export function submitForm() {
         name: form.elements.name.value,
         age: form.elements.age.value,
         experience: experience.value,
+        preference: preferences.join(", "),
         email: form.elements.email.value,
         newsletter: newsletters,
         password: form.elements.password.value,
@@ -36,7 +37,6 @@ export function submitForm() {
       function showName(user) {
         document.querySelector("#user-name span").textContent = user.name;
       }
-      //post(data);
     } else {
       form.reportValidity();
     }

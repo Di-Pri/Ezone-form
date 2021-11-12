@@ -12,7 +12,10 @@
     <main class="main-form">
       <article id="ask-user" class="active">
         <h1>Are you ready to get to the next level?</h1>
-        <p>Customize the Ezone space to your personal needs by answering some questions about your gaming preferences and lifestyle.</p>
+        <p>
+          Customize the Ezone space to your personal needs <br />
+          by answering some questions about your gaming preferences and lifestyle.
+        </p>
         <div class="backNext">
           <button><a href="index.html#cardsStart">Maybe later</a></button>
           <button class="lets-do">Let's do it!</button>
@@ -22,7 +25,7 @@
         <form>
           <article class="hidden">
             <h1>Your name</h1>
-            <p>Introduce yourself by writing your name, nickname, gamertag or however you prefer to be called.</p>
+            <p>Introduce yourself by writing your name, nickname or gamertag.</p>
             <div class="form-group">
               <label for="name">Enter your name</label>
               <input id="name" type="text" name="name" required />
@@ -49,7 +52,7 @@
             <h1>Gaming experience</h1>
             <p>For how long have you been playing computer games?</p>
 
-            <div class="experience">
+            <div class="radio-left">
               <div>
                 <input id="experienceOne" type="radio" name="experience" value="Less than 1 year" required />
                 <label for="experienceOne">Less than 1 year</label>
@@ -69,34 +72,58 @@
             </div>
           </article>
 
-          <!-- <article class="hidden">
-          <h1>Gaming preferences</h1>
-          <p>What types of games do you prefer to play?</p>
-          <div class="form-group">
-            <label for="types"
-              >Name
-              <span class="hint">Choose an option</span>
-            </label>
-            <input id="types" type="text" name="types" required />
-            <datalist id="types-list">
-              <option value="Sports"></option>
-              <option value="Racing"></option>
-              <option value="RTS"></option>
-              <option value="Simulation"></option>
-              <option value="Role-playing"></option>
-              <option value="Adventure"></option>
-              <option value="Survival"></option>
-              <option value="Fighting"></option>
-              <option value="Battle"></option>
-              <option value="Rhythm"></option>
-              <option value="Platform"></option>
-            </datalist>
-          </div>
-           <div class="backNext">
-            <button class="back" type="button">Back</button>
-            <button class="next" type="button">Next</button>
-          </div>
-        </article> -->
+          <article class="hidden">
+            <h1>Gaming preferences</h1>
+            <p>Mark all types of games you enjoy to play.</p>
+            <div class="preferences">
+              <div class="radio-left">
+                <div>
+                  <input id="types1" type="checkbox" name="preference" value="Sports" />
+                  <label for="types1">Sports</label>
+                </div>
+                <div>
+                  <input id="types2" type="checkbox" name="preference" value="Racing" />
+                  <label for="types2">Racing</label>
+                </div>
+                <div>
+                  <input id="types3" type="checkbox" name="preference" value="Survival" />
+                  <label for="types3">Survival</label>
+                </div>
+              </div>
+              <div class="radio-left">
+                <div>
+                  <input id="types4" type="checkbox" name="preference" value="Battle" />
+                  <label for="types4">Battle</label>
+                </div>
+                <div>
+                  <input id="types5" type="checkbox" name="preference" value="Rhythm" />
+                  <label for="types5">Rhythm</label>
+                </div>
+                <div>
+                  <input id="types6" type="checkbox" name="preference" value="Fighting" />
+                  <label for="types6">Fighting</label>
+                </div>
+              </div>
+              <div class="radio-left">
+                <div>
+                  <input id="types7" type="checkbox" name="preference" value="Adventure" />
+                  <label for="types7">Adventure</label>
+                </div>
+                <div>
+                  <input id="types8" type="checkbox" name="preference" value="Platform" />
+                  <label for="types8">Platform</label>
+                </div>
+                <div>
+                  <input id="types9" type="checkbox" name="preference" value="Simulation" />
+                  <label for="types9">Simulation</label>
+                </div>
+              </div>
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
 
           <!-- <article class="hidden">
           <h1>Favorite games</h1>
