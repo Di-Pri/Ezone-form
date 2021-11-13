@@ -24,3 +24,16 @@ export function moveSlides() {
     });
   });
 }
+
+export function closeForm() {
+  document.querySelectorAll(".close-form").forEach((p) => {
+    p.addEventListener("click", () => {
+      document.querySelector(".modal").classList.remove("hidden");
+      document.querySelector(".overlay").classList.add("darken");
+    });
+  });
+  document.querySelector(".modal button").addEventListener("click", () => {
+    document.querySelector(".modal").classList.add("hidden");
+    document.querySelector(".overlay").classList.remove("darken");
+  });
+}

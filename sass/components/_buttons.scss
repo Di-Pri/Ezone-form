@@ -2,8 +2,8 @@
 
 @mixin button {
   display: flex;
-  height: 50px;
-  width: 200px;
+  height: 44px;
+  width: 178px;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
@@ -11,14 +11,24 @@
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0 auto;
   margin-top: 1rem;
 }
 
+.modal button,
+.modal a {
+  @include button;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  height: 38px;
+  width: 190px;
+}
+
 .landing a {
   @include button;
-  width: 250px;
+  width: 210px;
 }
 
 #ask-user a,
