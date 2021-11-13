@@ -9,16 +9,13 @@ article.active {
   height: 100vh;
   gap: 3rem;
   text-align: center;
-
   & > * {
     margin-inline: 3rem;
   }
-
   h1 {
     font-size: 30px;
     color: b.$heading-color;
   }
-
   p {
     font-size: 18px;
     line-height: 1.7rem;
@@ -48,7 +45,6 @@ article.active {
   flex-direction: column;
   gap: 0.7rem;
   text-align: right;
-
   div:nth-of-type(2) {
     margin-bottom: 1rem;
   }
@@ -75,35 +71,50 @@ input[name="age"] {
   width: 50px;
 }
 
-.fav-games {
+.checkbox-images {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  align-items: center;
-
   div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-
+    gap: 3rem;
     div {
       display: flex;
       flex-direction: column;
       gap: 0;
     }
-
     label {
       width: 100px;
-
       img {
         cursor: pointer;
       }
     }
-
     input {
       opacity: 0;
+    }
+  }
+}
+
+.checkbox-labels {
+  gap: 2rem;
+  div {
+    align-items: flex-end;
+    font-size: 17px;
+    gap: 2rem;
+    label {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 0.7rem;
+      width: 120px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 }

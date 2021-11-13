@@ -74,48 +74,42 @@
 
           <article class="hidden">
             <h1>Gaming preferences</h1>
-            <p>Mark all types of games you enjoy to play.</p>
-            <div class="preferences">
-              <div class="radio-left">
+            <p>Select all types of games you enjoy to play.</p>
+            <div class="checkbox-images checkbox-labels">
+              <div>
                 <div>
-                  <input id="types1" type="checkbox" name="preference" value="Sports" />
-                  <label for="types1">Sports</label>
+                  <input id="racing" type="checkbox" name="preference" value="Racing" />
+                  <label for="racing">Racing</label>
                 </div>
                 <div>
-                  <input id="types2" type="checkbox" name="preference" value="Racing" />
-                  <label for="types2">Racing</label>
+                  <input id="sports" type="checkbox" name="preference" value="Sports" />
+                  <label for="sports">Sports</label>
                 </div>
                 <div>
-                  <input id="types3" type="checkbox" name="preference" value="Survival" />
-                  <label for="types3">Survival</label>
-                </div>
-              </div>
-              <div class="radio-left">
-                <div>
-                  <input id="types4" type="checkbox" name="preference" value="Battle" />
-                  <label for="types4">Battle</label>
+                  <input id="survival" type="checkbox" name="preference" value="Survival" />
+                  <label for="survival">Survival</label>
                 </div>
                 <div>
-                  <input id="types5" type="checkbox" name="preference" value="Rhythm" />
-                  <label for="types5">Rhythm</label>
-                </div>
-                <div>
-                  <input id="types6" type="checkbox" name="preference" value="Fighting" />
-                  <label for="types6">Fighting</label>
+                  <input id="battle" type="checkbox" name="preference" value="Battle" />
+                  <label for="battle">Battle</label>
                 </div>
               </div>
-              <div class="radio-left">
+              <div>
                 <div>
-                  <input id="types7" type="checkbox" name="preference" value="Adventure" />
-                  <label for="types7">Adventure</label>
+                  <input id="fighting" type="checkbox" name="preference" value="Fighting" />
+                  <label for="fighting">Fighting</label>
                 </div>
                 <div>
-                  <input id="types8" type="checkbox" name="preference" value="Platform" />
-                  <label for="types8">Platform</label>
+                  <input id="adventure" type="checkbox" name="preference" value="Adventure" />
+                  <label for="adventure">Adventure</label>
                 </div>
                 <div>
-                  <input id="types9" type="checkbox" name="preference" value="Simulation" />
-                  <label for="types9">Simulation</label>
+                  <input id="platform" type="checkbox" name="preference" value="Platform" />
+                  <label for="platform">Platform</label>
+                </div>
+                <div>
+                  <input id="simulation" type="checkbox" name="preference" value="Simulation" />
+                  <label for="simulation">Simulation</label>
                 </div>
               </div>
             </div>
@@ -128,7 +122,7 @@
           <article class="hidden">
             <h1>Favorite games</h1>
             <p>Choose the games that you like the most.</p>
-            <div class="fav-games">
+            <div class="checkbox-images">
               <div>
                 <div>
                   <input id="fortnite" name="games" type="checkbox" value="Fortnite" />
@@ -188,87 +182,99 @@
             </div>
           </article>
 
-          <!-- <article class="hidden">
-          <h1>Gaming durability</h1>
-          <p>How many hours per day do you usually play?</p>
-          <div class="form-group">
-            <label for="play-hours"
-              >Name
-              <span class="hint">Choose an option</span>
-            </label>
-            <input id="play-hours" type="text" name="play-hours" required />
-            <datalist id="play-hours-list">
-              <option value="0-3"></option>
-              <option value="3-5"></option>
-              <option value="5-7"></option>
-              <option value="7-9"></option>
-              <option value="9-12"></option>
-              <option value="12-18"></option>
-            </datalist>
-          </div>
-           <div class="backNext">
-            <button class="back" type="button">Back</button>
-            <button class="next" type="button">Next</button>
-          </div>
-        </article> -->
+          <article class="hidden">
+            <h1>Sleeping durability</h1>
+            <p>How many hours per day do you usually sleep?</p>
+            <div class="radio-left">
+              <div>
+                <input id="sleep1" type="radio" name="sleep" value="2-5 hours" />
+                <label for="sleep1">2-5 hours</label>
+              </div>
+              <div>
+                <input id="sleep2" type="radio" name="sleep" value="5-7 hours" />
+                <label for="sleep2">5-7 hours</label>
+              </div>
+              <div>
+                <input id="sleep3" type="radio" name="sleep" value="7-9 hours" />
+                <label for="sleep3">7-9 hours</label>
+              </div>
+              <div>
+                <input id="sleep4" type="radio" name="sleep" value="9-11 hours" />
+                <label for="sleep4">9-11 hours</label>
+              </div>
+              <div>
+                <input id="sleep5" type="radio" name="sleep" value="11-14 hours" />
+                <label for="sleep5">11-14 hours</label>
+              </div>
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
 
-          <!-- <article class="hidden">
-          <h1>Sleeping durability</h1>
-          <p>How long do you sleep normally?</p>
-          <div class="form-group">
-            <label for="sleep-hours"
-              >Name
-              <span class="hint">Choose an option</span>
-            </label>
-            <input id="sleep-hours" type="text" name="sleep-hours" required />
-            <datalist id="sleep-hours-list">
-              <option value="0-3"></option>
-              <option value="3-5"></option>
-              <option value="5-7"></option>
-              <option value="7-9"></option>
-              <option value="9-12"></option>
-              <option value="12-18"></option>
-            </datalist>
-          </div>
-           <div class="backNext">
-            <button class="back" type="button">Back</button>
-            <button class="next" type="button">Next</button>
-          </div>
-        </article> -->
-
-          <!-- <article class="hidden">
-          <h1>Areas of interest</h1>
-          <p>Choose areas where you would like to improve yourself.</p>
-          <div class="form-group">
-            <label for="areas"
-              >Name
-              <span class="hint">Choose an option</span>
-            </label>
-            <input id="areas" type="text" name="areas" required />
-            <datalist id="areas-list">
-              <option value="Hand/eye coordination"></option>
-              <option value="Reaction time"></option>
-              <option value="Hearing"></option>
-              <option value="Vision"></option>
-              <option value="Communication"></option>
-              <option value="Multi-tasking"></option>
-              <option value="Mindset"></option>
-              <option value="Nutrition"></option>
-              <option value="Injuries"></option>
-              <option value="Technology"></option>
-              <option value="Physiology"></option>
-              <option value="Sleep"></option>
-              <option value="Stress"></option>
-              <option value="Tactical"></option>
-              <option value="Strategy"></option>
-              <option value="Leadership"></option>
-            </datalist>
-          </div>
-         <div class="backNext">
-            <button class="back" type="button">Back</button>
-            <button class="next" type="button">Next</button>
-          </div>
-        </article> -->
+          <article class="hidden">
+            <h1>Areas of interest</h1>
+            <p>Choose areas where you would like to improve yourself.</p>
+            <div class="checkbox-images checkbox-labels">
+              <div>
+                <div>
+                  <input id="reaction" name="areas" type="checkbox" value="Reaction time" />
+                  <label for="reaction">Reaction time</label>
+                </div>
+                <div>
+                  <input id="nutrition" name="areas" type="checkbox" value="Nutrition" />
+                  <label for="nutrition">Nutrition</label>
+                </div>
+                <div>
+                  <input id="hearing" name="areas" type="checkbox" value="Hearing" />
+                  <label for="hearing">Hearing</label>
+                </div>
+                <div>
+                  <input id="injuries" name="areas" type="checkbox" value="Injuries" />
+                  <label for="injuries">Injuries</label>
+                </div>
+                <div>
+                  <input id="leadership" name="areas" type="checkbox" value="Leadership" />
+                  <label for="leadership">Leadership</label>
+                </div>
+                <div>
+                  <input id="mindset" name="areas" type="checkbox" value="Mindset" />
+                  <label for="mindset">Mindset</label>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input id="multitasking" name="areas" type="checkbox" value="Multi-tasking" />
+                  <label for="multitasking">Multi-tasking</label>
+                </div>
+                <div>
+                  <input id="sleep" name="areas" type="checkbox" value="Sleep" />
+                  <label for="sleep">Sleep</label>
+                </div>
+                <div>
+                  <input id="communication" name="areas" type="checkbox" value="Communication" />
+                  <label for="communication">Communication</label>
+                </div>
+                <div>
+                  <input id="stress" name="areas" type="checkbox" value="Stress" />
+                  <label for="stress">Stress</label>
+                </div>
+                <div>
+                  <input id="technology" name="areas" type="checkbox" value="Technology" />
+                  <label for="technology">Technology</label>
+                </div>
+                <div>
+                  <input id="vision" name="areas" type="checkbox" value="Vision" />
+                  <label for="vision">Vision</label>
+                </div>
+              </div>
+            </div>
+            <div class="backNext">
+              <button class="back" type="button">Back</button>
+              <button class="next" type="button">Next</button>
+            </div>
+          </article>
 
           <article id="last" class="hidden">
             <h1>Login information</h1>

@@ -16,7 +16,12 @@ export function submitForm() {
       const games = [];
       document.querySelectorAll("[name=games]:checked").forEach((game) => games.push(game.value));
 
+      const areas = [];
+      document.querySelectorAll("[name=areas]:checked").forEach((area) => areas.push(area.value));
+
       const experience = document.querySelector("[name=experience]:checked");
+
+      const sleep = document.querySelector("[name=sleep]:checked");
 
       let newsletters = "No";
       const newslettersChecked = document.querySelector("[name=newsletter]:checked");
@@ -30,6 +35,8 @@ export function submitForm() {
         experience: experience.value,
         preference: preferences.join(", "),
         games: games.join(", "),
+        sleep: sleep.value,
+        areas: areas.join(", "),
         email: form.elements.email.value,
         newsletter: newsletters,
         password: form.elements.password.value,
