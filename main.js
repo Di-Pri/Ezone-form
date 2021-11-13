@@ -4,8 +4,6 @@ import "./style.scss";
 
 import { loadCards } from "./modules/cards.js";
 
-("use strict");
-
 window.addEventListener("DOMContentLoaded", start);
 
 function start() {

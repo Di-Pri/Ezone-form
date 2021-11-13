@@ -10,11 +10,11 @@
   font-size: 14px;
 }
 
-.landing {
-  a {
-    margin: 0 auto;
-    @include button;
-  }
+.landing a,
+#ask-user a,
+#user-name a {
+  margin: 0 auto;
+  @include button;
 }
 
 .backNext {
