@@ -11,8 +11,10 @@ export function submitForm() {
       document.querySelector("#user-name").className = "active";
 
       const preferences = [];
-      const preferencesChecked = document.querySelectorAll("[name=preference]:checked");
-      preferencesChecked.forEach((pref) => preferences.push(pref.value));
+      document.querySelectorAll("[name=preference]:checked").forEach((pref) => preferences.push(pref.value));
+
+      const games = [];
+      document.querySelectorAll("[name=games]:checked").forEach((game) => games.push(game.value));
 
       const experience = document.querySelector("[name=experience]:checked");
 
@@ -27,6 +29,7 @@ export function submitForm() {
         age: form.elements.age.value,
         experience: experience.value,
         preference: preferences.join(", "),
+        games: games.join(", "),
         email: form.elements.email.value,
         newsletter: newsletters,
         password: form.elements.password.value,

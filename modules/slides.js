@@ -1,7 +1,11 @@
 export function moveSlides() {
+  document.querySelector(".lets-do").addEventListener("click", () => {
+    document.querySelector("#ask-user").className = "hidden";
+    document.querySelector("form article:nth-of-type(1)").className = "active";
+  });
+
   document.querySelectorAll(".next").forEach((button) => {
     button.addEventListener("click", (e) => {
-      // e.preventDefault();
       let subForm = document.querySelector("article.active input");
 
       if (subForm.checkValidity()) {

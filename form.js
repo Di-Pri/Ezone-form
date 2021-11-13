@@ -1,17 +1,14 @@
-// import "./sass/style.scss";
+// import "./style.scss";
 "use strict";
 
 import { moveSlides } from "./modules/slides.js";
 import { submitForm } from "./modules/submit-form.js";
+import { showGames } from "./modules/games.js";
 
 window.addEventListener("DOMContentLoaded", start);
 
 function start() {
   moveSlides();
+  showGames();
   submitForm();
 }
-
-document.querySelector(".lets-do").addEventListener("click", () => {
-  document.querySelector("#ask-user").className = "hidden";
-  document.querySelector("form article:nth-of-type(1)").className = "active";
-});
