@@ -1,22 +1,16 @@
-export function displayFormIcons() {
-  showGameTypes();
-  showGames();
-  showAreas();
-}
-
-function showGameTypes() {
+export function showGameTypes() {
   document.querySelectorAll("[name=preference]").forEach((input) => {
     showImages(input);
   });
 }
 
-function showGames() {
+export function showGames() {
   document.querySelectorAll("[name=games]").forEach((input) => {
     showImages(input);
   });
 }
 
-function showAreas() {
+export function showAreas() {
   document.querySelectorAll("[name=areas]").forEach((input) => {
     showImages(input);
   });
