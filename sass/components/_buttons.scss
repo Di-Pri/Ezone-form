@@ -1,27 +1,46 @@
 @use "../base" as b;
 
 @mixin button {
-  padding: 0.9rem 2.6rem;
+  display: flex;
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   background-color: b.$main-button-color;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 14px;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
-.landing a,
+.landing a {
+  @include button;
+  width: 250px;
+}
+
 #ask-user a,
 #user-name a {
-  margin: 0 auto;
   @include button;
 }
 
 .backNext {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
   button {
     @include button;
     border: none;
     cursor: pointer;
-    margin-inline: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .backNext {
+    gap: 1rem;
   }
 }

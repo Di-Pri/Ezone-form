@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 img {
   user-select: none;
 }

@@ -10,6 +10,17 @@
   }
 }
 
+.slide-count {
+  color: #3d3a61;
+  position: absolute;
+  font-family: b.$secondary-body;
+  top: 0;
+  left: 0;
+  margin: 1.5rem;
+  margin-left: 2.5rem;
+  font-size: 23px;
+}
+
 article.active {
   display: flex;
   flex-direction: column;
@@ -30,6 +41,16 @@ article.active {
     font-size: 18px;
     line-height: 1.7rem;
   }
+  .close-form {
+    color: #3d3a61;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1.5rem;
+    margin-right: 2.5rem;
+    font-size: 16px;
+    cursor: pointer;
+  }
 }
 
 .radio-left {
@@ -37,17 +58,17 @@ article.active {
   flex-direction: column;
   gap: 1.5rem;
   text-align: left;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 .preferences {
   display: flex;
   gap: 7rem;
   flex-wrap: wrap;
-}
-
-.news-text {
-  font-size: 14px;
-  margin-right: 6.5rem;
 }
 
 .email-pass {
@@ -57,23 +78,55 @@ article.active {
   text-align: right;
   div:nth-of-type(2) {
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: right;
+    label {
+      font-size: 14px;
+      margin-right: 3.5rem;
+    }
   }
 }
 
 @mixin input-field {
+  box-shadow: 0 0 0px 1000px b.$bg-color inset;
+  -webkit-text-fill-color: #fff;
   padding-top: 1rem;
-  padding-left: 0.3rem;
-  border: none;
+  padding-left: 0.6rem;
+  border: 0px solid;
   margin-left: 0.5rem;
   border-bottom: 1.5px solid b.$main-button-color;
-  background: b.$input-background;
+  background: b.$bg-color;
   color: white;
   font-size: 16px;
 }
 
 input:is([name="name"], [name="email"], [name="password"]) {
   @include input-field;
-  width: 250px;
+  width: 200px;
+}
+
+input:is([type="radio"], [type="checkbox"]):after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgb(214, 223, 252);
+  display: inline-block;
+  border: 2px solid white;
+}
+
+input:is([type="radio"], [type="checkbox"]):checked:after {
+  content: "";
+  background-color: b.$form-icons-color;
+}
+
+input[type="checkbox"]:after {
+  width: 8.5px;
+  height: 8.5px;
+  border-radius: 2px;
+  border: 1.5px solid white;
 }
 
 input[name="age"] {
@@ -126,5 +179,18 @@ input[name="age"] {
         height: 40px;
       }
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  article.active {
+    width: 100%;
+    height: 100%;
+    padding: 6rem 0;
+  }
+
+  .close-form {
+    position: relative;
+    margin: 1rem auto;
   }
 }
