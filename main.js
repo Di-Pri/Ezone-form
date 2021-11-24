@@ -9,3 +9,10 @@ window.addEventListener("DOMContentLoaded", start);
 function start() {
   loadCards();
 }
+
+const userSubmited = localStorage.getItem("userSubmited");
+console.log(userSubmited);
+if (userSubmited) {
+  document.querySelector(".get-zone").classList.add("hidden");
+  localStorage.removeItem("userSubmited", true);
+}

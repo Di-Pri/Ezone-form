@@ -47,6 +47,8 @@ export function submitForm() {
       function showName(user) {
         document.querySelector("#user-name span").textContent = user.name;
       }
+
+      localStorage.setItem("userSubmited", true);
     } else {
       form.reportValidity();
     }

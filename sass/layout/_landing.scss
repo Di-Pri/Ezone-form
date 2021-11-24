@@ -32,6 +32,10 @@
     font-size: 13px;
     max-width: 600px;
   }
+
+  .hidden {
+    display: none;
+  }
 }
 
 @mixin pattern {
