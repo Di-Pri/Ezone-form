@@ -1,5 +1,4 @@
-import "./style.scss";
-("use strict");
+"use strict";
 
 import { moveSlides, closeForm } from "./modules/slides.js";
 import { showGameTypes, showGames, showAreas } from "./modules/checkbox-icons";

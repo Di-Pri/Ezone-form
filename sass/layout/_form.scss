@@ -61,9 +61,10 @@ article.active {
   transform: translate(-50%, -50%);
   padding: 3rem;
   width: 600px;
-  height: 200px;
+  height: fit-content;
   background-color: #3d3a61;
   z-index: 10;
+  border-radius: 10px;
   .modal-content {
     text-align: center;
     div {
@@ -225,6 +226,11 @@ input[name="age"] {
       position: relative;
       margin: 1rem auto;
     }
+  }
+
+  .modal {
+    width: 80vw;
+    padding-inline: 1rem;
   }
 }
 

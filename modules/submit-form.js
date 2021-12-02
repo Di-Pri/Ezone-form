@@ -8,7 +8,6 @@ export function submitForm() {
     e.preventDefault();
     if (form.checkValidity()) {
       document.querySelector("#last").className = "hidden";
-      document.querySelector("#user-name").className = "active";
 
       const preferences = [];
       document.querySelectorAll("[name=preference]:checked").forEach((pref) => preferences.push(pref.value));
@@ -46,6 +45,7 @@ export function submitForm() {
       post(data, showName);
       function showName(user) {
         document.querySelector("#user-name span").textContent = user.name;
+        document.querySelector("#user-name").className = "active";
       }
 
       localStorage.setItem("userSubmited", true);
